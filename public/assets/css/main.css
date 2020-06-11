@@ -1,0 +1,82 @@
+:root {
+    /* weights and measures */
+    --nav-height:60px;
+    --footer-height:60px;
+    --scrollbar-width:5px;
+
+    /* colour palette */
+
+}
+
+html {
+    scrollbar-width:none;
+}
+
+body {
+    scrollbar-width:none;
+}
+
+container {
+    display: block;
+    position: relative;
+    width:90%;
+}
+
+section {
+    position: relative;
+}
+
+#home, #about, #projects, #contact {
+    width:100%;
+    height:auto;
+}
+
+
+footer {
+    position: absolute;
+    width:100%;
+    bottom:0;
+    height:var(--footer-height);
+}
+
+
+@media (min-width: 600px) { 
+
+container {
+    width:85%;
+}
+
+}
+
+
+@media (min-width: 768px) {
+
+container {
+    width:80%;
+}
+
+}
+
+@media (min-width: 992px) {
+
+    #home, #about, #projects, #contact {
+        height:100vh;
+    }
+
+    container {
+        width:70%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    #home, #about, #projects, #contact {
+        height:100vh;
+    }
+
+    #contact {
+        height:calc(100vh - var(--footer-height) );
+    }
+
+}

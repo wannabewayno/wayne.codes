@@ -1,0 +1,95 @@
+#submit-button>i{
+    background-color: transparent;
+    transition: 400ms ease-in-out;
+    margin:0px 0px 0px 10px;
+}
+
+#submit-button:hover, #submit-button:hover i{
+    background-color: #3a4267;
+    color:#ffc107;
+}
+#submit-button:hover i{
+    background-color: transparent;
+}
+
+/* ----------------------------------------------------- email transform -------------------------------------------- */
+#email, #name {
+    top:60px;
+    position: absolute;
+    border:2px solid #3a4267;
+    width:222px;
+    height:0px;
+    transition: 1000ms ease-in-out;
+    border-radius: 5px;
+}
+#email {
+    left:-10px;
+    transform: rotateZ(30deg);
+}
+#name{
+    right:-10px;
+    transform:rotateZ(-30deg);
+
+}
+#message{
+    overflow: auto;
+    position: relative;
+    border: 4px solid #3a4267;
+    border-radius:15px;
+    width:100%;
+    height:100%;
+    outline: none;
+    transition: 1000ms ease-in-out;
+    resize:none;
+    padding:10px;
+}
+#message::placeholder, #name::placeholder, #email::placeholder{
+    transition: 1000ms ease-in-out;
+    opacity: 0;
+}
+
+#form-container{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    width:400px;
+    height:200px;
+    background-color: #F0EAD6;
+    transition: 1000ms ease-in-out;
+}
+
+#form-container:hover #name, #form-container:focus-within #name, #form-container:hover #email, #form-container:focus-within #email{
+    position: absolute;
+    margin:10px;
+    top:0px;
+    width:180px;
+    height:25px;
+    transform: rotateZ(0deg);
+    border:0;
+    border-bottom:1px solid #3a4267;
+    border-radius: 0;
+}
+
+#form-container:hover #name, #form-container:focus-within #name{
+    right:0px;
+}
+
+#form-container:hover #email, #form-container:focus-within #email{
+    left:0px;
+}
+
+#form-container:hover #message, #form-container:focus-within #message {
+    margin-top:40px;
+    height: 75%;
+    border:1px solid #3a4267;
+    border-radius: 10px;    
+}
+#form-container:hover #message::placeholder, #form-container:focus-within #message::placeholder, #form-container:focus-within #name::placeholder,  #form-container:hover #name::placeholder, #form-container:focus-within #email::placeholder,  #form-container:hover #email::placeholder{
+    color: #3a4267;
+    opacity: 1;
+}
+
+#form-container:hover ,#form-container:focus-within{
+    padding:10px;
+}
