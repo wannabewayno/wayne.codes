@@ -5,7 +5,9 @@
     --scrollbar-width:5px;
 
     /* colour palette */
-
+    --ivory-blue:#b5bfda;
+    --light-leather-brown:#D2b584;
+    --impact-yellow:#ffc107;
 }
 
 html {
@@ -33,16 +35,36 @@ section {
     height:auto;
 }
 
-#contact {
-    background-color: #D2b584;
+nav{
+    background-color: transparent;
+    position: sticky;
+    top:0;
+    z-index:2;
 }
 
 
+#projects {
+    background-color: beige;
+}
+/* ----------------------------  Contact ------------------------------ */
+#contact {
+    background-color: var(--light-leather-brown);
+}
+
+#contact > h3 {
+    position: relative;
+    text-align: center;
+    margin:auto;
+}
+   
 footer {
+    text-align: center;
+    margin: auto;
     position: absolute;
     width:100%;
     bottom:0;
     height:var(--footer-height);
+    background-color:var(--ivory-blue) ;
 }
 
 
@@ -79,10 +101,6 @@ container {
 
     #home, #about, #projects, #contact {
         height:100vh;
-    }
-
-    #contact {
-        height:calc(100vh - var(--footer-height) );
     }
 
 }

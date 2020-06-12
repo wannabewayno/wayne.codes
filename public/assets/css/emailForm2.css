@@ -14,11 +14,13 @@
 
 
 #envelope {
-    position:relative;
+    position: absolute;
+    bottom:calc(var(--footer-height) + 20px);
     width:fit-content;
     text-align: center;
     margin: auto;
     cursor: pointer;
+    left:calc(100vw/2 - var(--width)/2);
 }
 
 #envelope-lid, #email-form, #envelope-body {
@@ -166,7 +168,7 @@
 }
 
 .slide-up {
-    transform:translateY(-300px)
+    transform: translateY(-220px)
 }
 
 .z1 {z-index: 1;}
