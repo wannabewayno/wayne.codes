@@ -19,6 +19,8 @@ body {
 container {
     display: block;
     position: relative;
+    text-align: center;
+    margin: auto;
     width:90%;
 }
 
@@ -29,6 +31,10 @@ section {
 #home, #about, #projects, #contact {
     width:100%;
     height:auto;
+}
+
+#contact {
+    background-color: #D2b584;
 }
 
 

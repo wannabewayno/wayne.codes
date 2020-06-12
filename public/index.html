@@ -49,25 +49,45 @@
         <div id="arrow-container">
             <div id="arrow"></div>
         </div>
+        <h3>Contact</h3>
 
-        <container>
-
-            <form id="email-form" method="post" action="/email" target="dummyframe" onsubmit="">
-                <h3>Contact</h3>
-                <div id="envelope" class="hoverable">
+        <div id="envelope" class="hoverable" status="closed" >
+            <div id="envelope-lid" class="z4">
+                <div id="lid-square"></div>
+                <div id="lid-triangle">
+                    <div id="lid-triangle-border"></div>
+                    <div id="lid-triangle-body"></div>
+                </div>
+            </div>
+            <form id="email-form" method="post" action="/email" target="dummyframe" class="z2">
+                <div id="letter">
                     <input type="text" id="name" placeholder="name" name="name">
                     <input type="text" id="email" placeholder="email" name="email">
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="message..."></textarea>
                 </div>
                 <button type="submit" id="submit-btn" for="contact-container" >Send<i class="material-icons">send</i></button>
             </form>
-            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-        </container>
+            <div id="envelope-body">
+                <div id="letter-back" class="z1"></div>
+                <div id="triangle-left" class="z3"> 
+                    <div id="triangle-left-border"></div>
+                    <div id="triangle-left-body"></div>
+                </div>
+                <div id="triangle-right" class="z3">
+                    <div id="triangle-right-border"></div>
+                    <div id="triangle-right-body"></div>
+                </div>
+                <div id="trapezoid" class="z3">
+                    <div id="trapezoid-border"></div>
+                    <div id="trapezoid-body"></div>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <p>Built from scratch by Wayne and <i class="material-icons">free_breakfast</i></p>
         </footer>
-        
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
     </section>
 
     
