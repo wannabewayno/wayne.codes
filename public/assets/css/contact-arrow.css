@@ -1,7 +1,9 @@
 
 #arrow-container {
+    text-align: center;
+    margin: auto;
     position: relative;
-    width:100%;
+    width:95%;
     height:60px;
 }
 
@@ -10,7 +12,7 @@
     position: relative;
     width: 0;
     height: 0;
-    border-left: calc(50vw - var(--scrollbar-width)/2) solid transparent;
-    border-right: calc(50vw - var(--scrollbar-width)/2) solid transparent;
-    border-top: 15vw solid beige;
+    border-left: calc(47.5vw - var(--scrollbar-width)/2) solid transparent;
+    border-right: calc(47.5vw - var(--scrollbar-width)/2) solid transparent;
+    border-top: 16vw solid beige;
 }
