@@ -1,5 +1,14 @@
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+dock {
+    margin:0;
+    padding:0;
+    scroll-snap-align:start;
+    scroll-snap-stop:normal;
+    position: relative;
+    display: block;
 }
 
 /* width */
@@ -9,7 +18,7 @@ html{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white; 
+    background: var(--light-leather-brown); 
 }
 
 /* Handle */

@@ -1,0 +1,71 @@
+/* recipedia */
+.recipedia > .thumbnail-image {
+    background-image: url("../images/choppingboard-chilli.jpg");
+}
+
+.recipedia > .logo-container {
+    background-color: hsla(72, 52%, 44%,0.85);
+}
+
+/* burger lyfe */
+.burger-lyfe > .thumbnail-image {
+    background-image: linear-gradient(315deg,hsl(210,50%,35%),#0080ff);
+}
+
+/* guist */
+.guist > .thumbnail-image {
+    background-image: url('../images/game-controller.jpg')
+}
+
+.guist > .logo-container {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.guist > .logo-container > .logo {
+    font-size: 4rem;
+    font-family: 'MuseoModerno', cursive;
+}
+
+/* globe report */
+.globe-report > .thumbnail-image {
+    background-image: url('../images/globe-icon.png');
+}
+
+.globe-report > .logo-container {
+    background-color:rgba(181,191,218,0.5);
+}
+
+.globe-report > .logo-container > .logo {
+    font-size: 40px;
+    color:#3a4267;
+}
+
+/* overseer */
+.overseer > .thumbnail-image {
+    background-image: url('../images/overseer.png');
+}
+
+.overseer > .logo-container {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.overseer > .logo-container > .logo {
+    font-size: 40px;
+    color:white;
+    font-family: 'Audiowide', cursive;
+}
+
+
+/* nine five */
+.nine-five > .thumbnail-image {
+    background-image: url('../images/plush-design-studio.jpg');
+}
+
+.nine-five > .logo-container {
+    background-color:rgba(245, 245, 220,0.5);
+}
+
+.nine-five > .logo-container > .logo {
+    font-size: 40px;
+    color:#3a4267;
+}

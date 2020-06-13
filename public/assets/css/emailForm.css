@@ -1,95 +1,210 @@
-#submit-button>i{
-    background-color: transparent;
-    transition: 400ms ease-in-out;
-    margin:0px 0px 0px 10px;
-}
+:root {
+    /* wieghts and measures */
+    --width:600px;
+    --border-width:3px;
 
-#submit-button:hover, #submit-button:hover i{
-    background-color: #3a4267;
-    color:#ffc107;
-}
-#submit-button:hover i{
-    background-color: transparent;
-}
+    --height:calc(var(--width)/2);
+    --trapeziem-height:calc(var(--height)/2);
+    --trapeziem-width:calc(var(--trapeziem-height)*1.5);
 
-/* ----------------------------------------------------- email transform -------------------------------------------- */
-#email, #name {
-    top:60px;
+    /* colour palette */
+    --envelope-border-colour:#3a4267 ;
+    --envelope-colour: #F0EAD6;
+}
+#contact-wrapper {
     position: absolute;
-    border:2px solid #3a4267;
-    width:222px;
-    height:0px;
-    transition: 1000ms ease-in-out;
-    border-radius: 5px;
+    width:fit-content;
+    left:calc(100vw/2 - var(--width)/2);
+    bottom:calc(var(--footer-height) + 20px);
 }
-#email {
-    left:-10px;
-    transform: rotateZ(30deg);
-}
-#name{
-    right:-10px;
-    transform:rotateZ(-30deg);
 
+#contact-wrapper > h3 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
 }
-#message{
-    overflow: auto;
+
+#envelope {
     position: relative;
-    border: 4px solid #3a4267;
-    border-radius:15px;
-    width:100%;
-    height:100%;
-    outline: none;
-    transition: 1000ms ease-in-out;
-    resize:none;
-    padding:10px;
-}
-#message::placeholder, #name::placeholder, #email::placeholder{
-    transition: 1000ms ease-in-out;
-    opacity: 0;
+    width:fit-content;
+    cursor: pointer;
 }
 
-#form-container{
+#envelope-lid, #email-form, #envelope-body {
+    position: absolute;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------ ENVELOPE LID ---------------------------------- */
+/* ------------------------------------------------------------------------------ */
+#envelope-lid {
+    height:auto;
+    width:var(--width);
+    text-align: center;
+    margin: auto;
+    transform-origin: top;
+    transition: all 500ms ease-in-out;
+}
+
+#lid-triangle-body, #lid-triangle-border {
+    margin: -3px auto 0  auto;
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--width)/2 - 10px) solid transparent;
+    border-right: calc(var(--width)/2 - 10px) solid transparent;
+    border-top: calc(var(--width)/3) solid var(--envelope-border-colour);
+}
+
+#lid-triangle-body{
+    border-top-color: var(--envelope-colour);
+    margin-top:calc(var(--width)* -1/3 - var(--border-width));
+}
+
+#lid-square {
+    width:var(--width);
+    height:30px;
+    position:relative;
+    background-color: var(--envelope-colour);
+    border:var(--border-width) solid var(--envelope-border-colour);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------ EMAIL FORM ------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+#email-form {
+    margin-left: calc(var(--width) * 0.025);
+    width: calc(var(--width) * 0.95);
+    background-color: white;
+    padding:1rem;
+    transition: all 500ms ease-in-out;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* ----------------------------- ENVELOPE BODY ---------------------------------- */
+/* ------------------------------------------------------------------------------ */
+
+#envelope-body {
+    width:var(--width);
+    height:var(--height) ;
     position: relative;
     text-align: center;
-    overflow: hidden;
-    border-radius: 15px;
-    width:400px;
-    height:200px;
-    background-color: #F0EAD6;
-    transition: 1000ms ease-in-out;
+    margin: auto;
+    background-color: var(--envelope-colour);
 }
 
-#form-container:hover #name, #form-container:focus-within #name, #form-container:hover #email, #form-container:focus-within #email{
+#letter-back {
+    width:var(--width);
+    height:var(--height);
+    background-color: var(--envelope-colour);
+    border-left: var(--border-width) solid var(--envelope-border-colour);
+    border-right: var(--border-width) solid var(--envelope-border-colour);
+}
+
+#trapezoid, #triangle-left, #triangle-right {
     position: absolute;
-    margin:10px;
-    top:0px;
-    width:180px;
-    height:25px;
-    transform: rotateZ(0deg);
-    border:0;
-    border-bottom:1px solid #3a4267;
-    border-radius: 0;
+    bottom:0;
 }
 
-#form-container:hover #name, #form-container:focus-within #name{
-    right:0px;
+#trapezoid-body, #trapezoid-border {
+    bottom:0;
+    position: absolute;
+    border-bottom: var(--trapeziem-height) solid var(--envelope-border-colour);
+    border-left: var(--trapeziem-width)  solid transparent;
+    border-right: var(--trapeziem-width) solid transparent;
+    height: 0;
+    width: var(--width);
+
 }
 
-#form-container:hover #email, #form-container:focus-within #email{
-    left:0px;
+#trapezoid-body {
+    border-bottom-color: var(--envelope-colour);
+    border-bottom-width: calc(var(--trapeziem-height) - var(--border-width)*2);
+    bottom: var(--border-width);
+    left: calc(var(--border-width)*2);
+    width: calc(var(--width) - 2 * (var(--border-width)*2));
+    border-left-width: calc(var(--trapeziem-width) - var(--border-width)*2);
+    border-right-width: calc(var(--trapeziem-width) - var(--border-width)*2);
 }
 
-#form-container:hover #message, #form-container:focus-within #message {
-    margin-top:40px;
-    height: 75%;
-    border:1px solid #3a4267;
-    border-radius: 10px;    
+#triangle-left-border, #triangle-right-border, #triangle-left-body, #triangle-right-body {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: var(--height) solid var(--envelope-border-colour);
+    bottom:0;
 }
-#form-container:hover #message::placeholder, #form-container:focus-within #message::placeholder, #form-container:focus-within #name::placeholder,  #form-container:hover #name::placeholder, #form-container:focus-within #email::placeholder,  #form-container:hover #email::placeholder{
-    color: #3a4267;
-    opacity: 1;
+#triangle-left {
+    left:0;
 }
 
-#form-container:hover ,#form-container:focus-within{
-    padding:10px;
+#triangle-left-border, #triangle-left-body {
+    border-right: calc(var(--height)*1.5) solid transparent;
+}
+
+#triangle-right {
+    right:calc(var(--height)*1.5);
+}
+
+#triangle-right-border, #triangle-right-body {
+    border-left: calc(var(--height)*1.5) solid transparent;
+}
+
+#triangle-left-body, #triangle-right-body {
+    border-bottom:calc(var(--height) - var(--border-width)*2) solid var(--envelope-colour);
+    margin-left:var(--border-width);
+}
+
+#triangle-left-body{
+    border-right-width:calc(var(--height)*1.5 - var(--border-width)*2);
+}
+
+#triangle-right-body{
+    border-left-width:calc(var(--height)*1.5 - var(--border-width)*2);
+}
+
+
+/* transition properties  */
+.open {
+    transform: rotateX(180deg);
+}
+
+.slide-up {
+    transform: translateY(-220px)
+}
+
+.z1 {z-index: 1;}
+.z2 {z-index: 2;}
+.z3 {z-index: 3;}
+.z4 {z-index: 4;}
+
+
+@media (min-width: 600px) { 
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 992px) {
+
+   
+
+}
+
+@media (min-width: 1200px) {
+
+    
+
 }

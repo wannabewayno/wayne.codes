@@ -1,21 +1,20 @@
 :root {
     /* weights and measures */
-    --nav-height:60px;
+    /* page */
+    --nav-height:50px;
     --footer-height:60px;
     --scrollbar-width:5px;
+    /* components */
+        /* thumbnail */
+        --thumbnail-width:25vw;
+        --thumbnail-height:calc(var(--thumbnail-width)*2/3);
+        --thumbnail-transition:400ms;
+        --thumbnail-margin-between: 5px;
 
     /* colour palette */
     --ivory-blue:#b5bfda;
     --light-leather-brown:#D2b584;
     --impact-yellow:#ffc107;
-}
-
-html {
-    scrollbar-width:none;
-}
-
-body {
-    scrollbar-width:none;
 }
 
 container {
@@ -28,24 +27,40 @@ container {
 
 section {
     position: relative;
+    height:fit-content
 }
+
 
 #home, #about, #projects, #contact {
+    position: relative;
     width:100%;
-    height:auto;
+    height:500px;
 }
 
-nav{
+/* ---------------------------- home ------------------------------------ */
+nav {
     background-color: transparent;
     position: sticky;
     top:0;
     z-index:2;
 }
-
+/* ------------------------------ about ---------------------------------- */
+/* ---------------------------  projects --------------------------------- */
+.project-thumbnail {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 #projects {
     background-color: beige;
 }
+
+#projects > h3, h5 {
+    text-align: center;
+    margin: auto;
+}
+
 /* ----------------------------  Contact ------------------------------ */
 #contact {
     background-color: var(--light-leather-brown);

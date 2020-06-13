@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wayne | fullstack Dev</title>
-    <link rel="shortcut icon" href="assets/images/favicon/cartoonface.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="assets/images/favicon/cartoonface.png" type="image/x-icon"> -->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=MuseoModerno&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -13,16 +15,20 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/scroll.css">
     <link rel="stylesheet" href="./assets/css/buttons.css">
-    <!-- <link rel="stylesheet" href="./assets/css/emailForm.css"> -->
-    <link rel="stylesheet" href="./assets/css/emailForm2.css">
+    <link rel="stylesheet" href="./assets/css/emailForm.css">
     <link rel="stylesheet" href="./assets/css/burger.css">
     <link rel="stylesheet" href="./assets/css/contact-arrow.css">
+    <link rel="stylesheet" href="./assets/css/shadow.css">
+    <link rel="stylesheet" href="./assets/css/thumbnail.css">
+    <link rel="stylesheet" href="./assets/css/custom-thumbnail.css">
 
 </head>
 <body>
 
     <section id="home">
+        <dock></dock>
         <!-- big banner, a hello, a picture, that's about it -->
+        <!-- animations that fly around? or just things that slightly move. -->
     </section>
 
     <!-- Sticky Nav -->
@@ -31,62 +37,137 @@
     </nav>
 
     <section id="about">
+        <dock></dock>
         <!-- meat of the build -->
         <!-- individual tabs for content, content will come with pictures and or animations -->
         <!-- maybe modals? -->
     </section>
 
     <section id="projects">
-        <h2>projects I'd like to show you</h2>
-        <!-- projectCard -->
-        <card>
-            <img src="" alt="">
-            <div class="overlay">
-                <!-- description onhover -->
-                <!-- link onhover -->
-            </div>
-        </card>
+        <dock></dock>
+    <container>
+        <h3>recent work</h3>
+
+        <div class="project-thumbnail">
+            <!-- recipedia -->
+            <thumbnail class="recipedia">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <img src="./assets/images/recipedia-logo.png" alt="" class="logo">
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+    
+            <!-- burger lyfe -->
+            <thumbnail class="burger-lyfe">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <img src="./assets/images/burger-lyfe-logo.png" alt="" class="logo">
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+    
+             <!-- guist.js -->
+             <thumbnail class="guist">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <div class="logo">
+                        <p>guist.js</p>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+    
+             <!-- overseer -->
+             <thumbnail class="overseer">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <div class="logo">
+                        <p>Overseer</p>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+    
+             <!-- globe report -->
+             <thumbnail class="globe-report">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <div class="logo">
+                        <p>The Globe Report</p>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+    
+            <!-- Nine Five -->
+            <thumbnail class="nine-five">
+                <div class="thumbnail-image"></div>
+                <div class="logo-container">
+                    <div class="logo">
+                        <p>Nine Five</p>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="thumbnail-info">Hello World</div>
+                </div>
+            </thumbnail>
+        </div>
+    </container>
+        <h5>want to see more? Send me an email</h5>
 
     </section>
 
     <section id="contact">
-
+        <dock></dock>
         <div id="arrow-container">
             <div id="arrow"></div>
         </div>
-        
-        <h3>Contact</h3>
-        <div id="envelope" class="hoverable" status="closed">
-            <div id="envelope-lid" class="z4">
-                <div id="lid-square"></div>
-                <div id="lid-triangle">
-                    <div id="lid-triangle-border"></div>
-                    <div id="lid-triangle-body"></div>
+
+        <div id="contact-wrapper">
+            <h3>Let's talk</h3>
+            <div id="envelope" class="hoverable" status="closed">
+                <div id="envelope-lid" class="z4">
+                    <div id="lid-square"></div>
+                    <div id="lid-triangle">
+                        <div id="lid-triangle-border"></div>
+                        <div id="lid-triangle-body"></div>
+                    </div>
                 </div>
-            </div>
-            <form id="email-form" method="post" action="/email" target="dummyframe" class="z2">
-                <div id="letter">
-                    <input type="text" id="name" placeholder="name" name="name">
-                    <input type="text" id="email" placeholder="email" name="email">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message..."></textarea>
-                </div>
-                <button type="submit" id="submit-btn" for="contact-container" >
-                    <i class="material-icons right">send</i>Send
-                </button>
-            </form>
-            <div id="envelope-body">
-                <div id="letter-back" class="z1"></div>
-                <div id="triangle-left" class="z3"> 
-                    <div id="triangle-left-border"></div>
-                    <div id="triangle-left-body"></div>
-                </div>
-                <div id="triangle-right" class="z3">
-                    <div id="triangle-right-border"></div>
-                    <div id="triangle-right-body"></div>
-                </div>
-                <div id="trapezoid" class="z3">
-                    <div id="trapezoid-border"></div>
-                    <div id="trapezoid-body"></div>
+                <form id="email-form" method="post" action="/email" target="dummyframe" class="z2">
+                    <div id="letter">
+                        <input type="text" id="name" placeholder="name" name="name">
+                        <input type="text" id="email" placeholder="email" name="email">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message..."></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" for="contact-container" >
+                        <i class="material-icons right">send</i>Send
+                    </button>
+                </form>
+                <div id="envelope-body">
+                    <div id="letter-back" class="z1"></div>
+                    <div id="triangle-left" class="z3"> 
+                        <div id="triangle-left-border"></div>
+                        <div id="triangle-left-body"></div>
+                    </div>
+                    <div id="triangle-right" class="z3">
+                        <div id="triangle-right-border"></div>
+                        <div id="triangle-right-body"></div>
+                    </div>
+                    <div id="trapezoid" class="z3">
+                        <div id="trapezoid-border"></div>
+                        <div id="trapezoid-body"></div>
+                    </div>
                 </div>
             </div>
         </div>
