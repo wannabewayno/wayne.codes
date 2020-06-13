@@ -1,0 +1,46 @@
+.name, .last-name, .title {
+    margin: 0;
+    padding:10px;
+    font-family: 'Audiowide', cursive;
+    color:#ffc107;
+}
+.last-name {
+    margin-left:25%;
+}
+
+.name {
+    margin-left: 40px;
+    color:white;
+}
+
+
+.shade {
+    position: relative;
+    padding-top:40px;
+    width:50%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.shade-long {
+    top:75%;
+    left:10%;
+    position: absolute;
+    z-index: 1;
+    width:fit-content;
+    height:fit-content;
+    background-color: rgba(0,0,0,0.6);
+    padding:0px;
+    border-radius: 15px;
+}
+
+#home {
+    position: relative;
+    top: 0;
+    width:100%;
+    height:auto;
+    background-color: white;
+    background-image: url(../images/Profile.JPG);
+    background-size: cover;
+    background-position: center;
+}

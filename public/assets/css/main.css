@@ -1,3 +1,9 @@
+*, *:before, *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 :root {
     /* weights and measures */
     /* page */
@@ -15,11 +21,6 @@
     --ivory-blue:#b5bfda;
     --light-leather-brown:#D2b584;
     --impact-yellow:#ffc107;
-}
-
-*, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
 }
 
 html {
@@ -96,15 +97,17 @@ nav {
 }
    
 footer {
-    text-align: center;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-content: start;
+    justify-items: start;
     position: absolute;
     width:100%;
     bottom:0;
     height:var(--footer-height);
     background-color:var(--ivory-blue) ;
 }
-
 
 @media (min-width: 600px) { 
 
