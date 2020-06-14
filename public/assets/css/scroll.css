@@ -17,7 +17,11 @@ dock {
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track-piece {
+    background: transparent url('../images/scrollbar.png') repeat-y !important;
+}
+
+/* ::-webkit-scrollbar-track {
     background: var(--light-leather-brown); 
 }
 
