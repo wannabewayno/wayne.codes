@@ -27,7 +27,7 @@ thumbnail {
     transition: all var(--thumbnail-transition) ease-in-out;
   } 
 
-  .logo-container > .logo, .thumbnail-info  {
+  .logo, .thumbnail-info  {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,16 +35,19 @@ thumbnail {
     -ms-transform: translate(-50%, -50%);
   }
 
+  .logo-container {
+    background-color: rgba(245,245,220,0.5);
+  }
 
-  .logo-container > .logo {
+  .logo {
+    transition: all var(--thumbnail-transition) ease-in-out;
     height: auto;
     width: 100%;
   }
 
-
   .overlay {
     opacity: 0;
-    background-color: #008CBA;
+    background-color: var(--light-leather-brown);
   }
   
   .thumbnail-info {
@@ -56,6 +59,16 @@ thumbnail {
     opacity: 1;
   }
 
-  thumbnail:hover .thumbnail-image, thumbnail:hover .logo-container {
+  thumbnail:hover .logo-container {
+    background-color: transparent;
+  }
+
+  thumbnail:hover .thumbnail-image {
     transform: scale(1.5);
+  }
+
+  thumbnail:hover .logo {
+    top:18%;
+    transform: translate(-50%, -50%) scale(0.6);
+    -ms-transform: translate(-50%, -50%) scale(0.6);
   }

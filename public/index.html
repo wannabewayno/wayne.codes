@@ -25,7 +25,7 @@
 
 </head>
 <body>
-
+    <!-- HOME BANNER -->
     <section id="home">
         <!-- Docks the window to fit the screen -->
         <dock></dock>
@@ -40,81 +40,178 @@
 
     <!-- Sticky Nav -->
     <nav class="z-depth-0">
-
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
     </nav>
 
+    <!-- ABOUT -->
     <section id="about">
         <!-- Docks the window to fit the screen -->
         <dock></dock>
 
         <container>
-            
+            <div id="about-wrapper">
+                <!-- title -->
+                <h2>About</h2>
+
+                <div id="coder">
+                    <div id="full-stack">
+
+                    </div>
+                    <div id="front-end">
+                        <ul>
+                            <li>
+                                <span>HTML5</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>CSS3</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>React</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>jQuery</span>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                        <img src="" alt="">
+                    </div>
+                    <div id="javascript">
+                        <p>Javascript</p>
+                        <img src="" alt="">
+                    </div>
+                    <div id="back-end">
+                        <ul>
+                            <li>
+                                <span>NodeJS</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>Express</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>HandleBars</span>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                        <img src="" alt="">
+                    </div>
+                    <div id="data-base">
+                        <ul>
+                            <li>
+                                <span>SQL</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>MongoDB</span>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <span>IndexedDB</span>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="designer">
+                    <div id=""></div>
+                    <div id="tools">
+                        <ul>
+                            <li>
+                                <span>fusion 360</span>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="UX"></div>
+                </div>
+                
             <!-- meat of the build -->
             <!-- individual tabs for content, content will come with pictures and or animations -->
             <!-- maybe modals? -->
 
+
+            </div>
         </container>
 
     </section>
 
+    <!-- PORTFOLIO -->
     <section id="projects">
         <!-- Docks the window to fit the screen -->
         <dock></dock>
 
-            <h3>Recent projects</h3>
+            <div>
+                <h3>Recent projects</h3>
+                <p>Just to name a few...</p>
+            </div>
 
             <div class="project-thumbnail">
                 <!-- recipedia -->
                 <thumbnail class="recipedia">
                     <div class="thumbnail-image"></div>
+                    <div class="overlay">
+                        <div class="thumbnail-info">
+                            <a href="" class="anchor-btn">
+                                <i class="material-icons right">chevron_right</i>View
+                            </a>
+                        </div>
+                    </div>
                     <div class="logo-container">
                         <img src="./assets/images/recipedia-logo.png" alt="" class="logo">
-                    </div>
-                    <div class="overlay">
-                        <div class="thumbnail-info">Hello World</div>
                     </div>
                 </thumbnail>
         
                 <!-- burger lyfe -->
                 <thumbnail class="burger-lyfe">
                     <div class="thumbnail-image"></div>
-                    <div class="logo-container">
-                        <img src="./assets/images/burger-lyfe-logo.png" alt="" class="logo">
-                    </div>
                     <div class="overlay">
                         <div class="thumbnail-info">Hello World</div>
+                    </div>
+                    <div class="logo-container">
+                        <img src="./assets/images/burger-lyfe-logo.png" alt="" class="logo">
                     </div>
                 </thumbnail>
         
                 <!-- guist.js -->
                 <thumbnail class="guist">
                     <div class="thumbnail-image"></div>
+                    <div class="overlay">
+                        <div class="thumbnail-info">Hello World</div>
+                    </div>
                     <div class="logo-container">
                         <div class="logo">
                             <p>guist.js</p>
                         </div>
-                    </div>
-                    <div class="overlay">
-                        <div class="thumbnail-info">Hello World</div>
                     </div>
                 </thumbnail>
         
                 <!-- overseer -->
                 <thumbnail class="overseer">
                     <div class="thumbnail-image"></div>
+                    <div class="overlay">
+                        <div class="thumbnail-info">Hello World</div>
+                    </div>
                     <div class="logo-container">
                         <div class="logo">
                             <p>Overseer</p>
                         </div>
-                    </div>
-                    <div class="overlay">
-                        <div class="thumbnail-info">Hello World</div>
                     </div>
                 </thumbnail>
         
                 <!-- globe report -->
                 <thumbnail class="globe-report">
                     <div class="thumbnail-image"></div>
+                    <div class="overlay">
+                        <div class="thumbnail-info">Hello World</div>
+                    </div>
                     <div class="logo-container">
                         <div class="logo">
                             <span>The Gl<img src="./assets/images/globe-icon.png" alt=""></span>
@@ -122,32 +219,27 @@
                             <span>be Report</span>
                         </div>
                     </div>
-                    <div class="overlay">
-                        <div class="thumbnail-info">Hello World</div>
-                    </div>
                 </thumbnail>
         
                 <!-- Nine Five -->
                 <thumbnail class="nine-five">
                     <div class="thumbnail-image"></div>
+                    <div class="overlay">
+                        <div class="thumbnail-info">Hello World</div>
+                    </div>
                     <div class="logo-container">
                         <div class="logo">
                             <p>Nine | Five</p>
                         </div>
                     </div>
-                    <div class="overlay">
-                        <div class="thumbnail-info">Hello World</div>
-                    </div>
                 </thumbnail>
             </div>
 
-            <div>
-                <h5>Just to name a few...</h5>
-                <p>Send me an email to find out more</p>
-            </div>
+            <h5>Want to work together?</h5>
+            
         
     </section>
-
+    <!-- CONTACT -->
     <section id="contact">
         <!-- Docks the window to fit the screen on desktop devices -->
         <dock></dock>
@@ -202,6 +294,8 @@
         </footer>
         <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
     </section>
+
+    <!-- fixed menu button -->
 
     
     <!--JavaScript at end of body for optimized loading-->

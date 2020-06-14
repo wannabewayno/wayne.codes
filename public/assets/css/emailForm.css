@@ -89,6 +89,8 @@
     text-align: center;
     margin: auto;
 }
+/* TODO size name, email and message inputs to respond at smaller screen sizes */
+/* ideally we would have a section of the page that 'folds' open to double the effective size of the form */
 
 /* ------------------------------------------------------------------------------ */
 /* ----------------------------- ENVELOPE BODY ---------------------------------- */

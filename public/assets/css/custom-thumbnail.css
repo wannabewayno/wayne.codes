@@ -4,7 +4,7 @@
 }
 
 .recipedia > .logo-container {
-    background-color: hsla(72, 52%, 44%,0.85);
+    /* background-color: hsla(72, 52%, 44%,0.85); */
 }
 
 /* burger lyfe */
@@ -17,12 +17,8 @@
     background-image: url('../images/game-controller.jpg')
 }
 
-.guist > .logo-container {
-    background-color: rgba(255,255,255,0.6);
-}
-
 .guist > .logo-container > .logo {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: 'MuseoModerno', cursive;
 }
 
@@ -32,11 +28,11 @@
 }
 
 .globe-report > .logo-container {
-    background-color:rgba(256,183,197,0.6);
+    /* background-color:rgba(256,183,197,0.6); */
 }
 
 .globe-report > .logo-container > .logo {
-    font-size: 40px;
+    font-size: 3.5rem;
     color:#3a4267;
 }
 
@@ -44,14 +40,14 @@
     border-radius: 50%;
     border: 1px solid #3a4267;
     margin-bottom: -1px;
-    width:24px;
+    width:2.2rem;
     height:auto;
 }
 
 .logo > span {
-    margin-left:-11px;
-    /* margin-right: -11px; */
+    margin-left:-14px;
 }
+
 
 /* overseer */
 .overseer > .thumbnail-image {
@@ -59,12 +55,13 @@
 }
 
 .overseer > .logo-container {
-    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(255,255,255,0.6); */
 }
 
 .overseer > .logo-container > .logo {
-    font-size: 40px;
-    color:white;
+    font-size: 4rem;
+    /* color:black; */
+    color:black;
     font-family: 'Audiowide', cursive;
 }
 
@@ -74,11 +71,7 @@
     background-image: url('../images/plush-design-studio.jpg');
 }
 
-.nine-five > .logo-container {
-    background-color:rgba(245, 245, 220,0.6);
-}
-
 .nine-five > .logo-container > .logo {
-    font-size: 40px;
+    font-size: 4rem;
     color:#3a4267;
 }

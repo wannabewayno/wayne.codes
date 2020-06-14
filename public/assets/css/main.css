@@ -71,8 +71,19 @@ nav {
     position: sticky;
     top:0;
     z-index:2;
+    height: var(--nav-height);
 }
 /* ------------------------------ about ---------------------------------- */
+#about {
+    margin-top: calc(var(--nav-height) * -1);
+    background-color: beige;
+}
+
+#about-wrapper > h2 {
+    padding-top: 20px;
+    text-align: center;
+    margin:0 auto;
+}
 /* ---------------------------  projects --------------------------------- */
 .project-thumbnail {
     display: flex;
@@ -85,7 +96,7 @@ nav {
     background-color: beige;
 }
 
-#projects > h3, h5, p {
+#projects > div > h3, h5, p {
     text-align: center;
     margin: 0 auto;
 }
@@ -114,7 +125,7 @@ footer {
 }
 
 footer > span {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 5px;
 }
 
@@ -161,6 +172,6 @@ a > img {
 
 @media (min-width: 1200px) {
 
-    :root { --thumbnail-width:27vw; }
+    :root { --thumbnail-width:26vw; }
     #home, #about, #projects, #contact { height:100vh; }
 }

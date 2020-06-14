@@ -1,4 +1,5 @@
 const transporter = require('../../lib/email');
+const emailValidation =require('./emailValidation');
 
 module.exports = app => {
     app.post('/email', (req,res) => {
