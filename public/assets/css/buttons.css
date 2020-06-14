@@ -1,6 +1,7 @@
 :root {
-    --button-colour:var(--ivory-blue);
-    --hover-colour:	hsl(72, 52%, 39%);
+    --button-colour: var(--impact-yellow);
+    --button-text: var(--impact-yellow);
+    --hover-colour:	var(--ivory-blue);
     --button-text:black;
     --disabled-colour: hsl(72, 0%, 44%);
 }
@@ -13,7 +14,7 @@ button, .anchor-btn, .btn {
     padding:0.5rem;
     font-size: large;
     background-color: var(--button-colour);
-    color:var(--button-text);
+    color: var(--imperial-blue);
     border:none;
     border-radius: 5px;
     cursor: pointer;

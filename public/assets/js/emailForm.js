@@ -49,8 +49,10 @@ envelope.addEventListener('click', function(event){
     event.preventDefault();
     const status = getStatus();
     if (status === 'closed') {
+        envelope.classList.add('z-depth-4')
         envelopeLid.classList.add('open');
     } else {
+        envelope.classList.remove('z-depth-4')
         emailForm.classList.remove('slide-up','z-depth-5');
     }    
 });

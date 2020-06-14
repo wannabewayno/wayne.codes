@@ -5,7 +5,7 @@ html{
 dock {
     margin:0;
     padding:0;
-    scroll-snap-align:start;
+    scroll-snap-align:none;
     scroll-snap-stop:normal;
     position: relative;
     display: block;
@@ -33,4 +33,13 @@ dock {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+
+@media (min-width: 992px) {
+
+    dock {
+        scroll-snap-align:start;
+    }
+    
 }

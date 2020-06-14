@@ -28,16 +28,29 @@
 
 /* globe report */
 .globe-report > .thumbnail-image {
-    background-image: url('../images/globe-icon.png');
+    background-image: url('../images/globe-report.jpg');
 }
 
 .globe-report > .logo-container {
-    background-color:rgba(256,183,197,0.4);
+    background-color:rgba(256,183,197,0.6);
 }
 
 .globe-report > .logo-container > .logo {
     font-size: 40px;
     color:#3a4267;
+}
+
+.logo > span > img {
+    border-radius: 50%;
+    border: 1px solid #3a4267;
+    margin-bottom: -1px;
+    width:24px;
+    height:auto;
+}
+
+.logo > span {
+    margin-left:-11px;
+    /* margin-right: -11px; */
 }
 
 /* overseer */

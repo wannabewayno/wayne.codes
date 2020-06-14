@@ -10,9 +10,10 @@
     --nav-height:50px;
     --footer-height:60px;
     --scrollbar-width:5px;
+
     /* components */
         /* thumbnail */
-        --thumbnail-width:25vw;
+        --thumbnail-width:81vw;
         --thumbnail-height:calc(var(--thumbnail-width)*2/3);
         --thumbnail-transition:400ms;
         --thumbnail-margin-between: 5px;
@@ -21,6 +22,8 @@
     --ivory-blue:#b5bfda;
     --light-leather-brown:#D2b584;
     --impact-yellow:#ffc107;
+    --imperial-blue:#3a4267;
+    --beige:beige;
 }
 
 html {
@@ -36,6 +39,7 @@ body {
     display: block;
     height: fit-content;
     font-family: 'Taviraj', serif;
+    color:var(--imperial-blue);
     overflow: overlay;
 }
 
@@ -46,7 +50,6 @@ container {
     text-align: center;
     margin: 0 auto;
     width:90%;
-    background-color: beige
 }
 
 section {
@@ -56,6 +59,7 @@ section {
 
 
 #home, #about, #projects, #contact {
+    display: block;
     position: relative;
     width:100%;
     height:fit-content;
@@ -89,6 +93,7 @@ nav {
 /* ----------------------------  Contact ------------------------------ */
 #contact {
     background-color: var(--light-leather-brown);
+    height: 100vw;
 }
 
 #contact > h3 {
@@ -100,7 +105,7 @@ nav {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     position: absolute;
     width:100%;
     bottom:0;
@@ -108,10 +113,15 @@ footer {
     background-color:var(--ivory-blue) ;
 }
 
+footer > span {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
 .footer-logo{
     margin-left:5px;
     width:auto;
-    height:50%;
+    height:60%;
 }
 
 a > img {
@@ -119,39 +129,38 @@ a > img {
     max-height:100%;
 }
 
+.hide-when-small {
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .hide-when-small { display:inline-block }
+}
+
 @media (min-width: 600px) { 
-
-container {
-    width:85%;
+    .footer-logo { height:80%; }
+    footer > span { font-size: 1.5rem; }
+    :root{ --thumbnail-width:40.5vw; }
+    #contact { height:calc(100vh - 150px ); }
+    container { width:85%; }
 }
-
-}
-
 
 @media (min-width: 768px) {
-
-container {
-    width:85%;
-}
-
+    footer { justify-content:center; }
+    :root { --thumbnail-width:40.5vw; }
+    #contact { height:calc(100vh - 50px ); }
+    container { width:85%; }
 }
 
 @media (min-width: 992px) {
 
-    #home, #about, #projects, #contact {
-        height:100vh;
-    }
-
-    container {
-        width:80%;
-    }
-
+    :root { --thumbnail-width:27vw; }
+    #home, #about, #projects, #contact { height:100vh; }
+    container { width:80%; }
 }
 
 @media (min-width: 1200px) {
 
-    #home, #about, #projects, #contact {
-        height:100vh;
-    }
-
+    :root { --thumbnail-width:27vw; }
+    #home, #about, #projects, #contact { height:100vh; }
 }
