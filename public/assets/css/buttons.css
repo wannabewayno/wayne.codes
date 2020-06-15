@@ -13,9 +13,9 @@ button, .anchor-btn, .btn {
     flex-direction: row-reverse;
     padding:0.5rem;
     font-size: large;
-    background-color: var(--button-colour);
+    background-color: transparent;
     color: var(--imperial-blue);
-    border:none;
+    border:2px solid var(--imperial-blue);
     border-radius: 5px;
     cursor: pointer;
     object-position: center;
@@ -43,6 +43,7 @@ button:active, .anchor-btn:active {
     transform: scale(1.5);
 }
 
+
 .top-right {
     position: absolute;
     top:0.5rem;
@@ -60,12 +61,11 @@ button:active, .anchor-btn:active {
     margin:0 !important;
 }
 
+.active {
+    background-color: var(--hover-colour);
+}
 
 /* --------------- custom button properties ----------------------- */
-#add-to-list-btn {
-    margin-left: 10px;
-    margin-bottom: 13px;
-}
 
 .disabled {
     background-color: var(--disabled-colour);

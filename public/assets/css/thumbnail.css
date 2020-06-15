@@ -40,6 +40,7 @@ thumbnail {
   }
 
   .logo {
+    z-index:1;
     transition: all var(--thumbnail-transition) ease-in-out;
     height: auto;
     width: 100%;
@@ -51,8 +52,10 @@ thumbnail {
   }
   
   .thumbnail-info {
-    color: white;
-    font-size: 20px;
+    height:100%;
+    width:100%;
+    color: var(--imperial-blue);
+    font-size: 15px;
   }
 
   thumbnail:hover .overlay {
