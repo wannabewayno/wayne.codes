@@ -1,9 +1,12 @@
 // html elements
 // ==============================================================================
 const coderBtn =  document.getElementById('coder-btn');
-const designerBtn =  document.getElementById('designer-btn');
 const coderImg =  document.getElementById('coder-img');
+const coderContent =  document.getElementById('coder-content');
+
+const designerBtn =  document.getElementById('designer-btn');
 const designerImg =  document.getElementById('designer-img');
+const designerContent =  document.getElementById('designer-content');
 
 
 // functions
@@ -20,18 +23,24 @@ function swapContent() {
     switch (btnID) {
         case 'coder-btn' :
             this.classList.add('active');
+            designerImg.classList.add('not-visible');
+            designerContent.classList.add('not-visible')
+            
             designerBtn.classList.remove('active');
             coderImg.classList.remove('not-visible');
-            designerImg.classList.add('not-visible');
+            coderContent.classList.remove('not-visible');
+            
             break;
         case 'designer-btn':
             this.classList.add('active');
-            coderBtn.classList.remove('active');
-            designerImg.classList.remove('not-visible');
             coderImg.classList.add('not-visible');
+            coderContent.classList.add('not-visible')
+            
+            coderBtn.classList.remove('active');
+            coderImg.classList.remove('not-visible');
+            designerContent.classList.remove('not-visible');
             break;
     }
-
 }
 
 // event listeners

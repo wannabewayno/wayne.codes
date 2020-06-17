@@ -52,10 +52,18 @@ thumbnail {
   }
   
   .thumbnail-info {
+    margin-top:20%;
     height:100%;
     width:100%;
     color: var(--imperial-blue);
-    font-size: 15px;
+    font-size: calc(var(--thumbnail-height)/11);
+    padding:0 0.5rem;
+  }
+
+  .thumbnail-info > a {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   thumbnail:hover .overlay {

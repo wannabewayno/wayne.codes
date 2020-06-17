@@ -1,4 +1,4 @@
-/* recipedia */
+/* ----------------------- recipedia ----------------------------- */
 .recipedia > .thumbnail-image {
     background-image: url("../images/choppingboard-chilli.jpg");
 }
@@ -7,22 +7,26 @@
     /* background-color: hsla(72, 52%, 44%,0.85); */
 }
 
-/* burger lyfe */
+/* ----------------------- burger lyfe --------------------------- */
 .burger-lyfe > .thumbnail-image {
     background-image: linear-gradient(315deg,hsl(210,50%,35%),#0080ff);
 }
 
-/* guist */
+.burger-lyfe:hover > .logo-container > .logo {
+    width:80%;
+}
+
+/* -------------------------- guist ------------------------------- */
 .guist > .thumbnail-image {
     background-image: url('../images/game-controller.jpg')
 }
 
 .guist > .logo-container > .logo {
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'MuseoModerno', cursive;
 }
 
-/* globe report */
+/* ---------------------- globe report -------------------------------*/
 .globe-report > .thumbnail-image {
     background-image: url('../images/globe-report.jpg');
 }
@@ -32,7 +36,7 @@
 }
 
 .globe-report > .logo-container > .logo {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color:#3a4267;
 }
 
@@ -48,8 +52,19 @@
     margin-left:-14px;
 }
 
+.globe-report:hover > .logo-container > .logo {
+    font-size: 2.3rem;
+}
 
-/* overseer */
+.globe-report:hover > .logo-container > .logo > span > img {
+    width:1.4rem;
+}
+
+.globe-report:hover > .logo-container > .logo > span {
+    margin-left:-8px;
+}
+
+/* ---------------------------------- overseer -------------------------------------*/
 .overseer > .thumbnail-image {
     background-image: url('../images/overseer.png');
 }
@@ -59,19 +74,19 @@
 }
 
 .overseer > .logo-container > .logo {
-    font-size: 4rem;
+    font-size: 3.4rem;
     /* color:black; */
-    color:black;
+    color:var(--imperial-blue);
     font-family: 'Audiowide', cursive;
 }
 
 
-/* nine five */
+/* ------------------------------------ nine five ---------------------------------------- */
 .nine-five > .thumbnail-image {
     background-image: url('../images/plush-design-studio.jpg');
 }
 
 .nine-five > .logo-container > .logo {
-    font-size: 4rem;
-    color:#3a4267;
+    font-size: 3.4rem;
+    color:var(--imperial-blue);
 }

@@ -1,0 +1,181 @@
+/* -------------------------- Radial button content selector -------------------------  */
+.content-selector {
+    width:150px;
+    height:150px;
+    /* positioning */
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    -ms-transform: translate(-50%, 50%);
+   
+}
+
+.inlay {
+    overflow: hidden;
+    position: absolute;
+    /* size */
+    width:100%;
+    height:100%;
+    /* border */
+    border-radius: 50%;
+    border:2px solid var(--imperial-blue);
+    /* other */
+    background-color: var(--ivory-blue);
+}
+
+.inlay > img {
+    /* size */
+    width:70%;
+    height:auto;
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.arc1 {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border:2px solid var(--imperial-blue);
+    border-radius: 100% 0 0 0;
+    transform: translate(-33%, -32%);
+    -ms-transform: translate(-33%, -32%);
+}
+
+.arc1:active {
+    transition: none;
+    transform: translate(-33%, -32%) scale(0.95);
+    -ms-transform: translate(-33%, -32%) scale(0.95);
+}
+
+.arc2 {
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border:2px solid var(--imperial-blue);
+    border-radius: 0 100% 0 0;
+    transform: translate(33%, -32%);
+    -ms-transform: translate(33%, -32%);
+}
+
+.arc2:active {
+    transition:none ;
+    transform: translate(33%, -32%) scale(0.95);
+    -ms-transform: translate(33%, -32%) scale(0.95);
+}
+
+/* ---------------------------------- Skill / knowledge lists ---------------------------------- */
+
+.line {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    width:20vw;
+    height:2px;
+}
+
+.front-end-line {
+    left: 105%;
+    background-color: #f37e71;
+}
+
+.data-base-line {
+    left: -5%;
+    background-color: #c2c2c4;
+}
+
+#front-end {
+    margin-top:150px;
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+#data-base {
+    margin-top:148px;
+}
+
+#back-end {
+    margin-left:-50px;
+    margin-top:-50px;
+}
+
+.list-section > img {
+    width:auto;
+    height:80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.skill-list, .skill-list-right {
+    margin-left:20%;
+    width:fit-content;
+    height:fit-content;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.skill-list-right {
+    margin-left:45%;
+}
+
+.skill-list > li, .skill-list-right > li {
+    padding:12px;
+    color:var(--imperial-blue);
+}
+
+
+.skill-list > li > img, .skill-list-right > li > img{
+    max-width:40px;
+    max-height:40px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.skill-list-right > li > img {
+    left: 125%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* ----------------------------- Full stack  -------------------------------- */
+#full-stack {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#full-stack > h6 {
+    padding:0;
+    margin:0;
+}
+
+#full-stack > img {
+    margin-top:-25px;
+    width:100px;
+    height:auto;
+}
+
+#javascript {
+    position: absolute;
+    top: 0;
+    left:100%;
+    transform: translate(-50%,-80%);
+    -ms-transform: translate(-50%, -80%);
+}
+
+#javascript > img {
+    max-height:50px;
+    max-width: 50px;
+}
