@@ -68,7 +68,16 @@
     -ms-transform: translate(33%, -32%) scale(0.95);
 }
 
-/* ---------------------------------- Skill / knowledge lists ---------------------------------- */
+.arctxt {
+    font-family: audiowide;
+    font-size: 22px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------- Skill lists ---------------------------------- */
 
 .line {
     position: absolute;
@@ -80,77 +89,45 @@
 }
 
 .front-end-line {
-    left: 105%;
+    left: 50%;
     background-color: #f37e71;
 }
 
-.data-base-line {
-    left: -5%;
-    background-color: #c2c2c4;
+#front-end, #data-base, #back-end, #full-stack {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 #front-end {
-    margin-top:150px;
-    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    top:50%;
+    left:50%;
 }
 
 #data-base {
-    margin-top:148px;
+    top:50%;
+    left:50%;
 }
 
 #back-end {
-    margin-left:-50px;
-    margin-top:-50px;
+    top:50%;
+    left:50%;
 }
 
-.list-section > img {
-    width:auto;
-    height:80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.skill-list, .skill-list-right {
-    margin-left:20%;
-    width:fit-content;
-    height:fit-content;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.skill-list-right {
-    margin-left:45%;
-}
-
-.skill-list > li, .skill-list-right > li {
-    padding:12px;
-    color:var(--imperial-blue);
+#back-end > img {
+    width:50%;
 }
 
 
-.skill-list > li > img, .skill-list-right > li > img{
-    max-width:40px;
-    max-height:40px;
-    position: absolute;
-    top: 50%;
-    left: -50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%, -50%);
+.skill-list > li > img {
+    max-width:100px;
+    max-height:100px;
 }
 
-.skill-list-right > li > img {
-    left: 125%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%, -50%);
-}
 
 /* ----------------------------- Full stack  -------------------------------- */
 #full-stack {
-    position: absolute;
-    top: 72%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%, -50%);

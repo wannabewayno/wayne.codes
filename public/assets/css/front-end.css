@@ -1,0 +1,127 @@
+* {
+    position: relative;
+}
+/* :root {
+    --monitor-width:200px;
+    --monitor-height:calc(var(--monitor-width)*9/16);
+    --stand-angle:calc(var(--monitor-width)*0.05);
+} */
+
+#front-end-container > h5 {
+    font-size:calc(var(--monitor-width)/6);
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+#front-end-container {
+    text-align: center;
+    margin:0 auto;
+    background-color: #f37f72;
+    width:calc(var(--monitor-width)*1.4);
+    height:calc(var(--monitor-width)*1.4);
+    padding:0rem;
+    border-radius: 50%;
+}
+
+#monitor {
+    text-align: center;
+    margin:0 auto;
+    width:var(--monitor-width);
+    height:var(--monitor-height);
+}
+
+#screen {
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color: white;
+    border:10px solid #40596b;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#screen-container {
+    text-align: center;
+    margin:5% auto 5% auto;
+    width:90%;
+    height:85%;
+}
+
+#dash {
+    width:100%;
+    height:20%;
+    background-color:#cdd5e0;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#stand {
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: calc(var(--monitor-height)*0.20) solid #a5b0b9;
+    border-left: var(--stand-angle) solid transparent;
+    border-right: var(--stand-angle) solid transparent;
+    height: 0;
+    width: calc(var(--monitor-width)*0.33);
+}
+
+.light {
+    margin-right:5%;
+    width:calc(var(--monitor-width)*0.05);
+    height:calc(var(--monitor-width)*0.05);
+    background-color: white;
+    border-radius: 50%;
+}
+
+#light-2{
+    background-color: limegreen;
+}
+
+.square {
+    position: absolute;
+    width:40%;
+    height:45%;
+    transform: (-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#square-top-left {
+    background-color: #ffd05c;
+    top:0;
+    left:0;
+}
+
+#square-bottom-right {
+    background-color: #ff7058;
+    bottom:0;
+    right:0; 
+}
+
+
+.content {
+    position:absolute;
+    width:50%;
+    height:45%;
+    transform: (-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#content-top-right {
+    top:0;
+    right:5%;
+}
+
+#content-bottom-left {
+    bottom:0;
+    left:0;
+}
+
+.subContent {
+    background-color:#a5b0b9;
+    width:100%;
+    height:40%;
+    margin:5% auto;
+}

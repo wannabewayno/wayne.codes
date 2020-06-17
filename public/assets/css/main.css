@@ -19,6 +19,19 @@
         --thumbnail-transition:400ms;
         --thumbnail-margin-between: 5px;
 
+        /* front-end css graphic  */
+        --monitor-width:125px;
+        --monitor-height:calc(var(--monitor-width)*9/16);
+        --stand-angle:calc(var(--monitor-width)*0.05);
+
+        /* data-base css graphic */
+        --server-width:125px;
+        --server-height:calc(var(--server-width)/4);
+        --junction-height:calc(var(--server-height)*0.5);
+        --junction-angle:calc(var(--monitor-width)*0.0325);
+
+        --pipe-length:22vw;
+     
     /* colour palette */
     --ivory-blue:#b5bfda;
     --light-leather-brown:#D2b584;
