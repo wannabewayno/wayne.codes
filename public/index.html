@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./assets/css/buttons.css">
     <link rel="stylesheet" href="./assets/css/front-end.css">
     <link rel="stylesheet" href="./assets/css/data-base.css">
+    <link rel="stylesheet" href="./assets/css/helpers.css">
 
 </head>
 <body>
@@ -44,12 +45,14 @@
         </div>
     </section>
 
+    
     <!-- Sticky Nav -->
     <nav class="z-depth-0">
-        <a href="#home">home</a>
+        <!-- not currently in use -->
+        <!-- <a href="#home">home</a>
         <a href="#about">about</a>
         <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
+        <a href="#contact">contact</a> -->
     </nav>
 
     <!-- ABOUT -->
@@ -64,23 +67,29 @@
 
                 <div id="coder-content">
 
-                    <div class="introduction">
-                        <p>A small introduction here</p>
+                    <div id="sub-content" class="info-byte">
+                        <h6>The Full-Stack</h6>
+                        <p>Coding for the entire scope, I'll take you from sketch to production in no time</p>
+                    </div>
+
+                    <div id="main-content" class="info-byte">
+                        <h6>Philosophy</h6>
+                        <p>I Code projects from the ground-up with fresh ideas and enthusiasm</p>
                     </div>
 
                     <div id="full-stack">
                         <img src="./assets/images/full-stack-stack.png" alt="">
                         <h6>Full-Stack Developer</h6>
-                        <div id="javascript">
+                        <!-- <div id="javascript">
                             <p>Javascript</p>
                             <img src="./assets/images/js-logo.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
 
                     <div id="front-end" class="list-section">
                         <div class="line front-end-line"></div>
+                        <h5>Front-End skills</h5>
                         <div id="front-end-container">
-                            <h5>Front-End skills</h5>
                             <div id="monitor">
                                 <div id="screen">
                                     <div id="screen-container">
@@ -103,57 +112,44 @@
                                 <div id="stand"></div>
                             </div>
                         </div>
-                        <ul class="skill-list">
-                            <li>
-                                <img src="./assets/images/html5-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/css3-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/react-nude-text-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/jquery-logo.png" alt="">
-                            </li>
+                        <ul class="skill-list center">
+                            <li class="html5"><img src="./assets/images/html5-logo.png" alt="" class="center"></li>
+                            <li class="css3"><img src="./assets/images/css3-logo.png" alt="" class="center"></li>
+                            <li class="react"><img src="./assets/images/react-nude-text-logo.png" alt="" class="center"></li>
+                            <li class="jquery"><img src="./assets/images/jquery-logo.png" alt="" class="center"></li>
                         </ul>
                     </div>
 
                     <div id="back-end" class="list-section">
+                        <div class="line back-end-line"></div>
+                        <h5>Back-end skills</h5>
                         <img src="./assets/images/server-rack.png" alt="">
-                        <h6>Back end skills</h6>
-                        <ul class="skill-list">
-                            <li>
-                                <img src="./assets/images/node-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/express-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/handlebars-logo-text.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/nodemailer-logo.png" alt="">
-                            </li>
+                        <ul class="skill-list center">
+                            <li class="node"><img src="./assets/images/node-logo.png" alt="" class="center"></li>
+                            <li class="express"><img src="./assets/images/express-logo.png" alt="" class="center"></li>
+                            <li class="handlebars"><img src="./assets/images/handlebars-logo-text.png" alt="" class="center"></li>
+                            <li class="nodemailer"><img src="./assets/images/nodemailer-logo.png" alt="" class="center"></li>
                         </ul>
                     </div>
 
                     <div id="data-base" class="list-section">
                         <div id="database-container">
-                            <h5>Data-base skills</h5>
                             <div id="server">
                                 <div id="server-rack-container">
                                     <div id="server-1" class="server-rack">
+                                        <img src="./assets/images/SQL-logo-modified.png" alt="" class="center">
                                         <div class="server-light"></div>
                                         <div class="server-light"></div>
                                         <div class="server-light power-light"></div>
                                     </div>
                                     <div id="server-2" class="server-rack">
+                                        <img src="./assets/images/mongoDB-logo.png" alt="" class="center">
                                         <div class="server-light"></div>
                                         <div class="server-light"></div>
                                         <div class="server-light power-light"></div>
                                     </div>
                                     <div id="server-3" class="server-rack">
+                                        <img src="./assets/images/indexedDB-logo-text.png" alt="" class="center">
                                         <div class="server-light"></div>
                                         <div class="server-light"></div>
                                         <div class="server-light power-light"></div>
@@ -169,48 +165,25 @@
                                     <div id="vertical-pipe"></div>
                                 </div>
                             </div>
+                            <h5>Database skills</h5>
                         </div>
-                        <ul class="skill-list">
-                            <li>
-                                <img src="./assets/images/SQL-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/mongoDB-logo.png" alt="">
-                            </li>
-                            <li>
-                                <img src="./assets/images/indexedDB-logo-text.png" alt="">
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
                 <div id="designer-content" class="not-visible">
-                    <div id="">
-                        <p>Designer introduction</p>
-                    </div>
-                    <div id="CAD">
-                        <ul>
-                            <li>
-                                <span>fusion 360</span>
-                                <img src="" alt="">
-                            </li>
-                            <li>
-                                <span></span>
-                                <img src="" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="UX/UI"></div>
+                   <h3>Oh no, there's nothing here yet!</h3>
+                   <small>check back later...</small>
                 </div>
 
 
                 <div class="content-selector">
-                    <div id="coder-btn" class="arc-btn arc1 active"></div>
-                    <div id="designer-btn" class="arc-btn arc2"></div>
-                    <p id="coder-btn-text" class="arctxt radius-93px offset--45">coder</p>
-                    <p id="designer-btn-text" class="arctxt radius-93px offset-45">designer</p>
-                    <div class="inlay">
-                       
+                    <div id="coder-btn" class="arc-btn arc1 active">
+                        <p id="coder-btn-text" class="arctxt radius-93px offset--45">coder</p>
+                    </div>
+                    <div id="designer-btn" class="arc-btn arc2">
+                        <p id="designer-btn-text" class="arctxt radius-93px offset-45">designer</p>
+                    </div>
+                    <div class="inlay ">
                         <img id="coder-img" src="./assets/images/code-logo-blue.png" alt="" >
                         <img id="designer-img" src="./assets/images/design-logo-blue.png" alt="" class="not-visible">
                     </div>

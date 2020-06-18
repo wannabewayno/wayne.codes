@@ -72,68 +72,180 @@
     font-family: audiowide;
     font-size: 22px;
     position: absolute;
-    top:50%;
-    left:50%;
+    bottom:0;
     transform: translate(-50%, -50%);
 }
 
+#coder-btn-text {
+ right:0;
+}
+
+#designer-btn-text {
+ left:0;
+}
+/* ---------------------------------- container -------------------------------------*/
+
+#coder-content {
+    width:100%;
+    height:100%;
+}
+
+.info-byte {
+    width:80%;
+    height:fit-content;
+}
+
+.info-byte > h6 {
+    font-size: 25px;
+}
+
+#main-content, #sub-content {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    top:0;
+}
+
+
+#main-content {
+    top:5%;
+    left:50%;
+}
+
+#sub-content{
+    top:85%;
+    right:-30%;
+}
+
 /* ---------------------------------- Skill lists ---------------------------------- */
+
+
+#front-end, #data-base, #back-end, #full-stack, .skill-list > li > img {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.skill-list > li > img {
+    max-width:50%;
+    max-height:50%;
+}
+
+.skill-list {
+    width:100%;
+    height:100%;
+}
 
 .line {
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%, -50%);
-    width:20vw;
-    height:2px;
+    width:var(--pipe-length);
+    height:calc(var(--junction-height)*0.4);
+}
+
+/* ----------------------- front-end alignment ------------------------------ */
+#front-end {
+    top:20%;
+    left:50%;
 }
 
 .front-end-line {
-    left: 50%;
+    top:58%;
+    width:calc(var(--pipe-length)*0.95);
+    left:calc(var(--pipe-length)*1/2);
     background-color: #f37e71;
 }
 
-#front-end, #data-base, #back-end, #full-stack {
+.css3, .html5, .react, .jquery {
+    width:100%;
+    height:100%;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
-#front-end {
-    top:50%;
-    left:50%;
+.css3 {
+    top:80%;
+    left:115%;
+}
+.html5 {
+    top:80%;
+    left:72%;
+}
+.react {
+    top:80%;
+    left:28.33%;
+}
+.jquery {
+    top:80%;
+    left:-15%;
 }
 
+/* -------------------------- database alignment ----------------------------- */
 #data-base {
-    top:50%;
+    top:42.5%;
     left:50%;
 }
 
+/* ----------------------------- back-end alignment --------------------------- */
 #back-end {
-    top:50%;
+    top:65%;
     left:50%;
+}
+
+.back-end-line {
+    top:100%;
+    left:50%;
+    width:100%;
+    background-color: #23232d;
+    transform: translate(-50%,-50%) rotateZ(90deg);
+    -ms-transform: translate(-50%, -50%) rotateZ(90deg);
 }
 
 #back-end > img {
-    width:50%;
+    max-width:175px;
 }
 
+.node, .nodemailer, .handlebars, .express {
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
-.skill-list > li > img {
-    max-width:100px;
-    max-height:100px;
+.nodemailer {
+    top:20%;
+    left:-18%;
+}
+.express {
+    top:75%;
+    left:-5%;
+}
+.handlebars {
+    top:20%;
+    left:100%;
+}
+.node {
+    top:70%;
+    left:105%;
 }
 
 
 /* ----------------------------- Full stack  -------------------------------- */
 #full-stack {
-    top: 50%;
+    top: 79%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%, -50%);
 }
 
 #full-stack > h6 {
+    display: none;
+    font-size:100%;
     padding:0;
     margin:0;
 }
@@ -155,4 +267,91 @@
 #javascript > img {
     max-height:50px;
     max-width: 50px;
+}
+
+@media (min-width: 400px) {
+    
+}
+
+@media (min-width: 600px) { 
+    :root{
+        --monitor-width:75px;
+        --server-width:125px;
+        --pipe-length:30vw;
+    }
+    #full-stack > h6 {
+        display: block;
+    }
+    .info-byte {
+        width:25%;
+    }
+    .info-byte > h6 {
+        font-size: 18px;
+    }
+    #main-content, #sub-content {
+        font-size: 12px;
+    }
+    #main-content {
+        top:2.5%;
+        left:15%;
+    }
+    #sub-content{
+        top:2.5%;
+        right:-10%;
+    }
+    #front-end { 
+        top:57.5%;
+        left:19%;
+    }
+    #data-base { 
+        top:50.8%;
+        left:85%;
+    }
+    #main-pipe {
+        left:calc(var(--pipe-length)*-1/2 + var(--server-width)*0.8);
+        width:var(--pipe-length);
+        /* height:calc(var(--junction-height)*0.4); */
+    }
+    #full-stack{
+        top: 60%;
+        left: 50%;
+    }
+    #full-stack > img { width:80px; }
+    #back-end { top:25%; }
+
+    #back-end > img {
+        max-width:150px;
+    }
+}
+
+@media (min-width: 768px) {
+    :root{
+        --monitor-width:100px;
+        --server-width:150px;
+    }
+    #data-base { top:48.6%; }
+    #full-stack{
+        top: 60%;
+        left: 50%;
+    }
+    #back-end { top:20%; }
+    #full-stack > img {
+        width:100px;
+    }
+}
+
+@media (min-width: 992px) {
+    #data-base { top:41.6%; }
+    #front-end { top:56.5%; }
+    :root {
+        --monitor-width:125px;
+        --server-width:200px;
+    }
+    #full-stack > h6 {
+        font-size:20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

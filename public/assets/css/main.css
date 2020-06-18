@@ -25,12 +25,12 @@
         --stand-angle:calc(var(--monitor-width)*0.05);
 
         /* data-base css graphic */
-        --server-width:125px;
+        --server-width:250px;
         --server-height:calc(var(--server-width)/4);
-        --junction-height:calc(var(--server-height)*0.5);
+        --junction-height:calc(var(--server-height)*0.3);
         --junction-angle:calc(var(--monitor-width)*0.0325);
 
-        --pipe-length:22vw;
+        --pipe-length:calc(64vw/2);
      
     /* colour palette */
     --ivory-blue:#b5bfda;
@@ -77,7 +77,10 @@ section {
     display: block;
     position: relative;
     width:100%;
-    height:fit-content;
+}
+
+#home {
+    height:100vh;
 }
 
 /* ---------------------------- home ------------------------------------ */
@@ -91,16 +94,15 @@ nav {
 /* ------------------------------ about ---------------------------------- */
 #about {
     margin-top: calc((var(--nav-height) * -1) - 28px);
+    height:2000px;
 }
 
 #about-wrapper {
-    height: fit-content;
+    height: 85%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 2px solid var(--imperial-blue);
     border-top: none;
-    margin-bottom: 75px;
-    padding-bottom: 75px;
 }
 
 #about > h2 {
@@ -179,6 +181,7 @@ a > img {
 }
 
 @media (min-width: 600px) { 
+    #about { height:700px; }
     .footer-logo { height:80%; }
     footer > span { font-size: 1.5rem; }
     :root{ --thumbnail-width:40.5vw; }
@@ -196,7 +199,7 @@ a > img {
 @media (min-width: 992px) {
 
     :root { --thumbnail-width:27vw; }
-    #home, #about, #projects, #contact { height:100vh; }
+    #about, #projects, #contact { height:100vh; }
     #about-wrapper { height:88% }
     container { width:80%; }
     .arc1 {
@@ -212,5 +215,5 @@ a > img {
 @media (min-width: 1200px) {
 
     :root { --thumbnail-width:26vw; }
-    #home, #about, #projects, #contact { height:100vh; }
+    #about, #projects, #contact { height:100vh; }
 }

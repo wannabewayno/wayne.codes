@@ -7,8 +7,8 @@
     --stand-angle:calc(var(--monitor-width)*0.05);
 } */
 
-#front-end-container > h5 {
-    font-size:calc(var(--monitor-width)/6);
+#front-end > h5 {
+    font-size:calc(var(--monitor-width)/5);
     text-align: center;
     margin: 0 auto 15px auto;
 }
@@ -124,4 +124,17 @@
     width:100%;
     height:40%;
     margin:5% auto;
+}
+
+@media (min-width: 600px) {
+    #screen {  
+        border:5px solid #40596b;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+
+    #dash  {
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+    }
 }
