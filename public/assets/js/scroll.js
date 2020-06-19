@@ -26,9 +26,11 @@ const differencePosition = (elementA, elementB) => {
 
 // carries out a callback from a defined difference in position of two elements. 
 const toggleClassesWhen = (targetElement, referenceElement, condition,...classesToToggle) => {
-    console.log(classesToToggle);
+
     const difference = differencePosition(targetElement,referenceElement);
     console.log(difference);
+
+
 
     if (difference === condition) {
         addClass( targetElement, ...classesToToggle )

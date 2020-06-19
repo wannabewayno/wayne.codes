@@ -140,13 +140,10 @@
     transition:1000ms ease-in-out;
 }
 
-.link-box{
-    width:500px;
-    height:500px;
-}
 
-.linkedin, .github, .pdf{
-    
+.link-box{
+    width:250px;
+    height:250px;
 }
 
 .linkedin{
@@ -172,10 +169,18 @@
     -ms-transform: translate(-50%,-50%) rotateZ(180deg);
 }
 
-.link-container > a {
-    transform:scale(1.2)
+.link-container > a > img {
+    max-width:50px;
+    max-height:50px;
 }
 
+.link-container > a > img:hover {
+    transform: scale(1.2);
+}
+
+.link-container > a > img:active {
+    transform: none;
+}
 
 #menu:focus, #menu:active, .is-active, .is-active:focus, .is-active:active{
     background-color: transparent;

@@ -13,7 +13,7 @@ const lidCallBack = event => {
             envelopeLid.classList.replace('z4','z1');
             emailForm.classList.add('z-depth-5','slide-up');
         } else {
-            envelope.classList.remove('z-depth-4');
+            envelope.classList.remove('z-depth-5');
             setStatus('closed')
         }
     } 
@@ -46,7 +46,7 @@ const foldCallBack = event => {
             setStatus('open');
         } else {
             emailForm.classList.replace('z4','z2');
-            emailForm.classList.remove('slide-up');
+            emailForm.classList.remove('slide-up','z-depth-5');
         }
     } 
 }
@@ -65,7 +65,7 @@ const toggleEnvelope = event => {
     event.stopPropagation();
     const status = getStatus();
     if (status === 'closed') {
-        envelope.classList.add('z-depth-4')
+        envelope.classList.add('z-depth-5')
         envelopeLid.classList.add('open');
     } else {
         foldBottom.classList.add('fold-up');
