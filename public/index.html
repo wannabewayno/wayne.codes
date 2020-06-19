@@ -11,10 +11,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <!-- import arctxt -->
     <link rel="stylesheet" href="./assets/dist/arctxt.min.css">    
     <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/headings.css">
+    <link rel="stylesheet" href="./assets/css/lists.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/scroll.css">
@@ -29,7 +31,6 @@
     <link rel="stylesheet" href="./assets/css/front-end.css">
     <link rel="stylesheet" href="./assets/css/data-base.css">
     <link rel="stylesheet" href="./assets/css/helpers.css">
-
 </head>
 <body>
     <!-- HOME BANNER -->
@@ -327,7 +328,7 @@
 
         <div id="contact-wrapper">
             <h3>Let's talk</h3>
-            <div id="envelope" class="hoverable" status="closed">
+            <div id="envelope" class="hoverable-5" status="closed">
                 <div id="envelope-lid" class="z4">
                     <div id="lid-square"></div>
                     <div id="lid-triangle">
@@ -368,7 +369,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer id='footer'>
             <span>Built from scratch by Wayne</span>
             <span class="hide-when-small">, ☕</span>
             <span class="hide-when-small"> and a little </span>
@@ -378,14 +379,34 @@
     </section>
 
     <!-- fixed menu button -->
+    <div id="burger-box">
+        <div id="link-box" class="link-box hide">
+            <div class="link-container linkedin">
+                <a href="https://linkedin.com/in/wcgriffiths" class="hide-reverse"><i class="material-icons">send</i></a>
+            </div>
+            <div class="link-container github">
+                <a href="https://github.com/wannabewayno"  class="hide-reverse"><i class="material-icons">send</i></a>
+            </div>
+            <div class="link-container pdf">
+            	<a href="https://drive.google.com/file/d/12vrIrVKrlhNdNFySIBzwJmiObeAlgU2C/view?usp=sharing" class="hide-reverse"><i class="material-icons">send</i></a>
+            </div>
+        </div>
+        <button id="menu" class="center hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
 
     
     <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <!-- arctxt -->
     <script src="./assets/dist/arctxt.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/emailForm.js"></script>
     <script src="./assets/js/buttons.js"></script>
+    <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/scroll.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     /* weights and measures */
     /* page */
     --nav-height:50px;
-    --footer-height:60px;
+    --footer-height:70px;
     --scrollbar-width:5px;
 
     /* components */
@@ -20,7 +20,7 @@
         --thumbnail-margin-between: 5px;
 
         /* front-end css graphic  */
-        --monitor-width:125px;
+        --monitor-width:115px;
         --monitor-height:calc(var(--monitor-width)*9/16);
         --stand-angle:calc(var(--monitor-width)*0.05);
 
@@ -94,11 +94,11 @@ nav {
 /* ------------------------------ about ---------------------------------- */
 #about {
     margin-top: calc((var(--nav-height) * -1) - 28px);
-    height:2000px;
+    height:1700px;
 }
 
 #about-wrapper {
-    height: 85%;
+    height: 92.5%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 2px solid var(--imperial-blue);
@@ -180,7 +180,8 @@ a > img {
     .hide-when-small { display:inline-block }
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
+    #about-wrapper { height: 85%; } 
     #about { height:700px; }
     .footer-logo { height:80%; }
     footer > span { font-size: 1.5rem; }

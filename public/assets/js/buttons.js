@@ -17,9 +17,9 @@ function swapContent() {
     if ( this.classList.value.indexOf('active')>= 0 ) {
         return;
     }
-    console.log('clicked on a non-active button');
+
     const btnID = this.getAttribute('id');
-    console.log(`button ID is :${btnID}`);
+    
     switch (btnID) {
         case 'coder-btn' :
             this.classList.add('active');
@@ -31,6 +31,7 @@ function swapContent() {
             coderContent.classList.remove('not-visible');
             
             break;
+            
         case 'designer-btn':
             this.classList.add('active');
             coderImg.classList.add('not-visible');

@@ -127,9 +127,14 @@
     -ms-transform: translate(-50%, -50%);
 }
 
+.skill-list > li {
+    max-width: 50%;
+    max-height: 50%;
+}
+
 .skill-list > li > img {
-    max-width:50%;
-    max-height:50%;
+    max-width:90%;
+    max-height:90%;
 }
 
 .skill-list {
@@ -153,6 +158,7 @@
 }
 
 .front-end-line {
+    display: none;
     top:58%;
     width:calc(var(--pipe-length)*0.95);
     left:calc(var(--pipe-length)*1/2);
@@ -277,7 +283,10 @@
     :root{
         --monitor-width:75px;
         --server-width:125px;
-        --pipe-length:30vw;
+        --pipe-length:31vw;
+    }
+    .front-end-line{
+        display:block;
     }
     #full-stack > h6 {
         display: block;

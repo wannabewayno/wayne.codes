@@ -125,16 +125,16 @@
 }
 
 #vertical-pipe {
-    top:calc(var(--server-height)*-1.25);
+    top:calc(var(--server-height)*-1.3);
     height:calc(var(--server-height)*3.5);
     width: calc(var(--junction-height)*0.4);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 0px) {
     #main-pipe {
         left:50%;
         width:calc(var(--server-width)*0.8);
-        /* height:calc(var(--junction-height)*0.4); */
+        height:calc(var(--junction-height)*0.4);
     }
 }
 
