@@ -28,14 +28,31 @@ const differencePosition = (elementA, elementB) => {
 const toggleClassesWhen = (targetElement, referenceElement, condition,...classesToToggle) => {
 
     const difference = differencePosition(targetElement,referenceElement);
-    console.log(difference);
 
+    condition = processCondition(condition);
 
-
-    if (difference === condition) {
-        addClass( targetElement, ...classesToToggle )
-    } else {
-        removeClass( targetElement, ...classesToToggle )
+    switch (condition.condition) {
+        case '<':
+            if (Math.abs(difference) < condition.value) {
+                addClass( targetElement, ...classesToToggle )
+            } else {
+                removeClass( targetElement, ...classesToToggle );
+            }
+            break;
+        case '>':
+            if (difference > condition.value) {
+                addClass( targetElement, ...classesToToggle )
+            } else {
+                removeClass( targetElement, ...classesToToggle );
+            }
+            break;
+        case '=':
+            if (difference === condition.value) {
+                addClass( targetElement, ...classesToToggle )
+            } else {
+                removeClass( targetElement, ...classesToToggle );
+            }
+            break;
     }
 }
 
@@ -48,10 +65,18 @@ const removeClass = ( element, ...removeTheseClasses ) => {
     element.classList.remove(...removeTheseClasses);
 }
 
+const processCondition = condition => {
+    processedCondition = {
+        condition: condition.slice(0,1),
+        value: parseFloat(condition.substring(1))
+    } 
+    return processedCondition 
+}
+
 // event listeners 
 // ==============================================================================
 
 // executes all these functions when the user scrolls
 window.onscroll = function(){
-    toggleClassesWhen(burgerBox, footer, 0, 'pulse','background-beige','z-depth-4');
+    toggleClassesWhen(burgerBox, footer, '<1', 'pulse','background-beige','z-depth-4');
 }

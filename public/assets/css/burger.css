@@ -81,11 +81,11 @@
 }
 .hamburger--elastic .hamburger-inner::after {
     top: 20px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    transition: 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
 .hamburger--elastic.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transform:  translate3d(0, 10px, 0) rotate(135deg);
     transition-delay: 0.075s; 
 }
 .hamburger--elastic.is-active .hamburger-inner::before {
@@ -128,7 +128,8 @@
 }
 
 #menu:active {
-    transform: none;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 
 .link-box, .link-container {
