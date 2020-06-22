@@ -130,6 +130,7 @@
 #menu:active {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
 }
 
 .link-box, .link-container {
@@ -138,6 +139,7 @@
     left:50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
     transition:1000ms ease-in-out;
 }
 
@@ -163,11 +165,13 @@
 .hide {
     transform: translate(-50%,-50%) rotateZ(-180deg);
     -ms-transform: translate(-50%,-50%) rotateZ(-180deg);
+    -moz-transform: translate(-50%,-50%);
 }
 
 .hide-reverse {
     transform: translate(-50%,-50%) rotateZ(180deg);
     -ms-transform: translate(-50%,-50%) rotateZ(180deg);
+    -moz-transform: translate(-50%,-50%);
 }
 
 .link-container > a > img {

@@ -22,7 +22,7 @@
 }
 
 .guist > .logo-container > .logo {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: 'MuseoModerno', cursive;
 }
 
@@ -52,12 +52,12 @@
     margin-left:-14px;
 }
 
-.globe-report:hover > .logo-container > .logo {
-    font-size: 2.3rem;
+.globe-report:hover > .logo-container > .logo, .globe-report:focus > .logo-container > .logo {
+    font-size: 2rem;
 }
 
-.globe-report:hover > .logo-container > .logo > span > img {
-    width:1.4rem;
+.globe-report:hover > .logo-container > .logo > span > img, .globe-report:focus > .logo-container > .logo > span > img {
+    width:1.2rem;
 }
 
 .globe-report:hover > .logo-container > .logo > span {
@@ -74,7 +74,7 @@
 }
 
 .overseer > .logo-container > .logo {
-    font-size: 3.4rem;
+    font-size: 3rem;
     /* color:black; */
     color:var(--imperial-blue);
     font-family: 'Audiowide', cursive;
@@ -87,6 +87,6 @@
 }
 
 .nine-five > .logo-container > .logo {
-    font-size: 3.4rem;
+    font-size: 3rem;
     color:var(--imperial-blue);
 }
