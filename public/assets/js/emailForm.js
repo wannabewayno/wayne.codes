@@ -71,8 +71,10 @@ const toggleEnvelope = event => {
         foldBottom.classList.add('fold-up');
         emailForm.style.transition = 'all 250ms cubic-bezier(0.39, 0.575, 0.565, 1)'
         const height = parseFloat(window.getComputedStyle(emailForm).getPropertyValue('height').replace('px',''));
-        textBox.classList.add('not-visible')
         emailForm.style.height = height/2+'px'
+        setTimeout(() => {
+            textBox.classList.add('not-visible');
+        }, 250);
 
     }    
 }
