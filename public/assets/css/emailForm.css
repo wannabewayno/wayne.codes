@@ -137,6 +137,7 @@
     width:100%;
     padding:0 0.5rem;
     border:none;
+    border-radius: none;
 }
 #message:focus {
     outline:none;
