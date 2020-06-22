@@ -224,8 +224,8 @@
 }
 
 .nodemailer {
-    top:20%;
-    left:-18%;
+    top:25%;
+    left:-5%;
 }
 .express {
     top:75%;
@@ -276,7 +276,10 @@
 }
 
 @media (min-width: 400px) {
-    
+    .nodemailer {
+        top:20%;
+        left:-15%;
+    }
 }
 
 @media (min-width: 600px) { 

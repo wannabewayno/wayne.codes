@@ -76,17 +76,25 @@ button:active, .anchor-btn:active {
     background-color: var(--ivory-blue);
 }
 
-
-.top-right {
+.top-right, .top-left, .bottom-right, .bottom-left {
+    margin:0;
     position: absolute;
-    top:0.5rem;
-    right:0.5rem;
 }
 
-.top-left {
-    position: absolute;
+.top-right, .top-left {
     top:0.5rem;
+}
+
+.bottom-right, .bottom-left {
+    bottom:0.5rem;
+}
+
+.top-left, .bottom-left {
     left:0.5rem;
+}
+
+.top-right, .bottom-right {
+    right:0.5rem;
 }
 
 .zero {
