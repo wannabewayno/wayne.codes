@@ -15,7 +15,7 @@
     position: absolute;
     width:fit-content;
     left:calc(100vw/2 - var(--width)/2);
-    bottom:calc(var(--footer-height) + 20px);
+    bottom:calc(var(--footer-height) + 12%);
 }
 
 #contact-wrapper > h3 {

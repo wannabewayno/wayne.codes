@@ -137,7 +137,7 @@ nav {
 /* ----------------------------  Contact ------------------------------ */
 #contact {
     background-color: var(--light-leather-brown);
-    height: 100vw;
+    height: 60vh;
 }
 
 #contact > h3 {
@@ -176,25 +176,27 @@ a > img {
 .hide-when-small {
     display: none;
 }
-
-@media (min-width: 400px) {
+@media (min-width: 200px) { #contact { height:calc(200px + 60px) } }
+@media (min-width: 300px) { #contact { height:calc(300px + 60px) } }
+@media (min-width: 400px) { 
+    #contact { height:calc(400px + 60px) }
     .hide-when-small { display:inline-block }
 }
-
+@media (min-width: 500px) { #contact { height:calc(500px + 60px) } }
 @media (min-width: 600px) {
     #about-wrapper { height: 85%; } 
     #about { height:700px; }
     .footer-logo { height:80%; }
     footer > span { font-size: 1.5rem; }
     :root{ --thumbnail-width:40.5vw; }
-    #contact { height:calc(100vh - 150px ); }
+    #contact { height:calc(600px + 60px ); }
     container { width:85%; }
 }
 
 @media (min-width: 768px) {
     footer { justify-content:center; }
     :root { --thumbnail-width:40.5vw; }
-    #contact { height:calc(100vh - 50px ); }
+    #contact { height:calc(100vh - 20px ); }
     container { width:85%; }
 }
 
