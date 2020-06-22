@@ -127,10 +127,9 @@
 
 #message {
     background-image: url('../images/line.png');
-    background-repeat: ;
     background-position: cover;
     background-attachment: local;
-    line-height: 150%;
+    line-height: 1.3rem;
     resize:none;
     overflow:scroll;
     height:100%;
