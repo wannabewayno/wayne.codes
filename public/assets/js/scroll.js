@@ -57,7 +57,6 @@ const toggleClassesWhen = (targetElement, referenceElement, condition,...classes
 }
 
 const addClass = ( element, ...addTheseClasses ) => {
-    console.log(addTheseClasses);
     element.classList.add(...addTheseClasses);
 }
 
