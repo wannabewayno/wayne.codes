@@ -165,13 +165,13 @@
 .hide {
     transform: translate(-50%,-50%) rotateZ(-180deg);
     -ms-transform: translate(-50%,-50%) rotateZ(-180deg);
-    -moz-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%) rotateZ(-180deg);
 }
 
 .hide-reverse {
     transform: translate(-50%,-50%) rotateZ(180deg);
     -ms-transform: translate(-50%,-50%) rotateZ(180deg);
-    -moz-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%) rotateZ(180deg);
 }
 
 .link-container > a > img {
