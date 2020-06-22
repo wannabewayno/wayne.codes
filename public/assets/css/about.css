@@ -114,7 +114,7 @@
 }
 
 #sub-content{
-    top:85%;
+    top:83%;
     right:-30%;
 }
 
@@ -198,14 +198,14 @@
 
 /* ----------------------------- back-end alignment --------------------------- */
 #back-end {
-    top:65%;
+    top:62.5%;
     left:50%;
 }
 
 .back-end-line {
     top:100%;
     left:50%;
-    width:100%;
+    width:80%;
     background-color: #23232d;
     transform: translate(-50%,-50%) rotateZ(90deg);
     -ms-transform: translate(-50%, -50%) rotateZ(90deg);
@@ -243,7 +243,7 @@
 
 /* ----------------------------- Full stack  -------------------------------- */
 #full-stack {
-    top: 79%;
+    top: 76.5%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%, -50%);

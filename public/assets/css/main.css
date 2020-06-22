@@ -94,7 +94,7 @@ nav {
 /* ------------------------------ about ---------------------------------- */
 #about {
     margin-top: calc((var(--nav-height) * -1) - 28px);
-    height:1700px;
+    height:1800px;
 }
 
 #about-wrapper {
