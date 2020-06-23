@@ -30,7 +30,7 @@
         --junction-height:calc(var(--server-height)*0.3);
         --junction-angle:calc(var(--monitor-width)*0.0325);
 
-        --pipe-length:calc(64vw/2);
+        --pipe-length:calc(36vw);
      
     /* colour palette */
     --ivory-blue:#b5bfda;
